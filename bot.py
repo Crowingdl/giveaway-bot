@@ -41,7 +41,7 @@ async def join_giveaway(message: Message):
         await message.answer("⚠️ Kamu harus subscribe ke channel @basehah untuk ikut serta.")
 
 from aiogram import Bot  # Tambahkan ini!
-from aiogram.types import DefaultBotProperties
+from aiogram.client.bot import DefaultBotProperties
 
 async def main():
     global bot
