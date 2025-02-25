@@ -5,8 +5,8 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.exceptions import TelegramBadRequest
 
-TOKEN = "7906003165:AAGsFbOdXO3Cn1Xl-rxncJ2CBgpQqBLK9BM"
-CHANNEL_ID = "-1002415989494"
+TOKEN = "7906003165:AAEOw12J_lqB86Noj1DiBTRyxSF2gPmlAys"
+CHANNEL_ID = "@basehah"
 ADMIN_ID = 6699586232  # Ganti dengan ID admin
 
 dp = Dispatcher()
