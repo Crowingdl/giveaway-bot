@@ -40,10 +40,14 @@ async def join_giveaway(message: Message):
     else:
         await message.answer("⚠️ Kamu harus subscribe ke channel @basehah untuk ikut serta.")
 
+from aiogram import Bot  # Tambahkan ini!
+from aiogram.types import DefaultBotProperties
+
 async def main():
     global bot
-    bot = Bot(token=TOKEN, parse_mode="HTML")
+    bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
     asyncio.run(main())
+
